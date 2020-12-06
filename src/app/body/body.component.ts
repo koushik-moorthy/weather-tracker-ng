@@ -16,7 +16,7 @@ export class BodyComponent implements OnInit {
   apiCall(searchTerm: string, type: string): void{
     searchTerm = searchTerm[0].toUpperCase() + searchTerm.slice(1);
     this.apiService.setLocationType(searchTerm, type);
-    this.router.navigate(['body'], {queryParams: {location: searchTerm, 'type': type}});
+    this.router.navigate(['weather'], {queryParams: {location: searchTerm, 'type': type}});
     this.apiService.apiCall().subscribe((data) => {
       this.details = data;
       this.temperature = this.details.main.temp;

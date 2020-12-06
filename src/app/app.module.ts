@@ -9,8 +9,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'body', pathMatch: 'full'},
-  { path: 'body', component: BodyComponent },
+  {path: '', redirectTo: 'weather', pathMatch: 'full'},
+  { path: 'weather', component: BodyComponent },
 ];
 
 @NgModule({
