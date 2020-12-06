@@ -1,0 +1,17 @@
+<div class="bg">
+<div class="body">
+    <div class="input">
+            <h1 class="weather-title">Weather Tracker</h1>
+            <input type="text" placeholder="Enter a city Name" class="inputValue" #searchTerm>
+                <select id="temperature" class="tempera" #type>
+                        <option value="metric" class="small"> Celsius</option>
+                        <option value="imperial" class="small">Fahrenheit</option>
+                </select><br><br>
+                <input type="submit" name="Submit" class="submit" (click)="apiCall(searchTerm.value,type.value)">
+                <div *ngIf="details">
+                    <p class="desc">{{temperature}}</p>
+                    <p class="temp" >{{description}}</p>
+                </div>
+    </div>
+</div>
+</div>

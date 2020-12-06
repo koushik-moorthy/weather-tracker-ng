@@ -1,0 +1,107 @@
+$grey: #e7e7e7;
+$white: #ffffff;
+$all-color: #2a3a4e;
+
+.body{
+	font-family: 'Open Sans', sans-serif;
+    background-image: url('../../assets/img/bg.jpg');
+    height: 100vh;
+    
+}
+
+
+.input{
+	text-align: center;
+	padding-top: 270px;
+}
+.weather-title{
+	margin-bottom: 40px;
+	font-size: 40px;
+	font-weight: 900;
+	color: $all-color;
+}
+
+
+input[type="text"]{
+	height: 50px;
+	width:600px;
+	background:$grey;
+	font-family: "Roboto",sans-serf;
+	font-size: 20px;
+	border: none;
+	border-radius: 2px;
+	padding: 20px;
+
+}
+
+input[type="submit"]{
+	height: 50px;
+	width:100px;
+	background: $grey;
+	font-size: 20px;
+	background-color: $all-color;
+	color:$white;
+	border:none;
+	border-radius: 12px;
+	margin-top:10px;
+	font-family: "montserrat",sans-serf;
+}
+.temp{
+	font-size: 25px;
+	font-weight: 600;
+}
+.desc{
+	font-size: 25px;
+	margin-top:70px;
+	font-weight: 800;
+}
+.tempera{
+	height: 50px;
+	width:120px;
+	background:$grey;
+	align-content: center;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+	border: none;
+	color: #646464;
+	}
+
+
+.display{
+	text-align: center;
+	font-weight: bold;
+}
+span:focus {
+    outline: none;
+    border: 0;
+ }
+
+
+@media screen and (max-width: 1024px) {
+	*{
+		font-size: 20px;
+	}
+	input[type="text"]{
+		height:40px;
+		width:250px;
+		background: $grey;
+		font-family: "Nunito",sans-serf;
+		border:none;
+		border-radius: 2px;
+		padding: 10px;
+		font-size: 18px;
+		border:1px solid $all-color;
+	}
+	.tempera{
+		height:40px;
+		width:90px;
+		font-size: 14px;
+		border:1px solid $all-color;
+	}
+	input[type="submit"]{
+		height:40px;
+	}
+	.small { font-size:10px; }
+}
+
